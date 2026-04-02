@@ -1,0 +1,56 @@
+[
+  {
+    "userId": "user-123",
+    "salt": "friend-2026-401",
+    "roll": {
+      "rarity": "rare",
+      "species": "owl",
+      "eye": "@",
+      "hat": "wizard",
+      "shiny": false,
+      "stats": {
+        "DEBUGGING": 52,
+        "PATIENCE": 82,
+        "CHAOS": 22,
+        "WISDOM": 26,
+        "SNARK": 26
+      }
+    }
+  },
+  {
+    "userId": "user-123",
+    "salt": "xxxxxxxx00000001",
+    "roll": {
+      "rarity": "common",
+      "species": "chonk",
+      "eye": "@",
+      "hat": "none",
+      "shiny": false,
+      "stats": {
+        "DEBUGGING": 11,
+        "PATIENCE": 24,
+        "CHAOS": 63,
+        "WISDOM": 5,
+        "SNARK": 3
+      }
+    }
+  },
+  {
+    "userId": "buddy-user",
+    "salt": "friend-2026-abC",
+    "roll": {
+      "rarity": "uncommon",
+      "species": "rabbit",
+      "eye": "@",
+      "hat": "tinyduck",
+      "shiny": false,
+      "stats": {
+        "DEBUGGING": 14,
+        "PATIENCE": 39,
+        "CHAOS": 77,
+        "WISDOM": 25,
+        "SNARK": 52
+      }
+    }
+  }
+]

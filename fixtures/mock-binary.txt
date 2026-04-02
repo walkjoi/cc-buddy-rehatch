@@ -1,0 +1,8 @@
+claude-binary-fixture
+rollRarity
+CompanionBones
+inspirationSeed
+companionUserId
+"friend-2026-401"
+padding
+friend-2026-401
