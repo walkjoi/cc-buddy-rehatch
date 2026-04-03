@@ -1,23 +1,49 @@
 ---
 name: cc-buddy-rehatch-cli
-description: Guide for using the cc-buddy-rehatch CLI in this repository to inspect, rehatch, verify, and restore Claude Code buddies. Use when an agent needs to operate `bun run src/cli.ts`, choose between full rehatch, `--appearance-only`, or `--soul-only`, inspect the current buddy soul and appearance, or safely recover from a patch with `restore`.
+description: Guide for using the published `cc-buddy-rehatch` CLI to inspect, rehatch, verify, and restore Claude Code buddies. Use when an agent needs to operate the npm package command `cc-buddy-rehatch` or the repo-local entrypoint `bun run src/cli.ts`, choose between full rehatch, `--appearance-only`, or `--soul-only`, inspect the current buddy soul and appearance, or safely recover from a patch with `restore`.
 ---
 
 # CC Buddy Rehatch CLI
 
 ## Overview
 
-Use this skill when working with the `cc-buddy-rehatch` CLI in this repo.
+Use this skill when working with the published `cc-buddy-rehatch` CLI or its source in this repository.
 
 Prefer deterministic non-interactive commands over the Ink UI unless the user explicitly wants to drive the selection flow manually.
 
-Run commands from the repository root with:
+The CLI is published to npm as `cc-buddy-rehatch`. For installed usage, invoke it with:
+
+```bash
+cc-buddy-rehatch <command> ...
+```
+
+When testing changes from the repository root, invoke the source entrypoint with:
 
 ```bash
 bun run src/cli.ts <command> ...
 ```
 
 Do not use the deleted prototype entrypoints (`index.js`, `ui.jsx`, `sprites.js`).
+
+## Install
+
+Published npm package:
+
+```bash
+npm install -g cc-buddy-rehatch
+```
+
+Local repository checkout:
+
+```bash
+bun install
+```
+
+The CLI currently requires Bun at runtime, even when installed from npm.
+
+Prefer `cc-buddy-rehatch ...` in user-facing guidance.
+
+Prefer `bun run src/cli.ts ...` only when you specifically need to exercise the local source tree in this repo.
 
 ## Workflow
 

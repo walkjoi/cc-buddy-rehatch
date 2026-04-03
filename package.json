@@ -1,6 +1,6 @@
 {
   "name": "cc-buddy-rehatch",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Rehatch your Claude Code buddy by searching for a matching salt and patching the local binary",
   "type": "module",
   "bin": {

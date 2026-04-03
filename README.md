@@ -8,17 +8,58 @@ This project is based on reverse-engineered community findings, not official Ant
 
 ## Requirements
 
-- Bun 1.3+
+- Bun 1.3+ (required at runtime, including npm-installed usage)
 - A local Claude Code install
 - Claude Code fully closed before patching
 
 ## Install
+
+Install the published CLI globally with npm:
+
+```bash
+npm install -g cc-buddy-rehatch
+```
+
+If you are working from a local checkout of this repository instead:
 
 ```bash
 bun install
 ```
 
 ## Usage
+
+If you installed the package globally from npm:
+
+```bash
+# Interactive rehatch flow
+cc-buddy-rehatch rehatch
+
+# Non-interactive rehatch
+cc-buddy-rehatch rehatch --species dragon --rarity legendary --eye ✦ --hat wizard --shiny
+
+# Keep the current name/personality and refresh appearance only
+cc-buddy-rehatch rehatch --species cat --appearance-only
+
+# Keep the current appearance and refresh name/personality only
+cc-buddy-rehatch rehatch --soul-only
+
+# Show the current buddy
+cc-buddy-rehatch current
+
+# Inspect the detected Claude Code target
+cc-buddy-rehatch inspect
+
+# Run safety checks
+cc-buddy-rehatch doctor
+
+# Verify that the current buddy matches a target
+cc-buddy-rehatch verify --species dragon --rarity legendary
+
+# Restore the latest backup
+cc-buddy-rehatch restore
+```
+
+If you are running from this repository checkout:
 
 ```bash
 # Interactive rehatch flow
@@ -48,6 +89,8 @@ bun run src/cli.ts verify --species dragon --rarity legendary
 # Restore the latest backup
 bun run src/cli.ts restore
 ```
+
+After `rehatch` or `restore`, reopen Claude Code and run `/buddy` if you want Claude Code to regenerate or display the refreshed companion state.
 
 ## Commands
 
